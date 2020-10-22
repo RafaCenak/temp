@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "cloudGuardVersion": {
+            "value": "R80.30 - Bring Your Own License"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "vmName": {
+            "value": "NvaSbxAzeuwCpfw0"
+        },
+        "vmSize": {
+            "value": "Standard_D3_v2"
+        },
+        "sicKey": {
+            "value": null
+        },
+        "virtualNetworkName": {
+            "value": "vnet_sbx_azeuw_10.192.1.0-24_HubVNet"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "10.192.1.0/24"
+            ]
+        },
+        "subnet1Name": {
+            "value": "snet_10.192.1.64-28_CGFrontend"
+        },
+        "subnet1Prefix": {
+            "value": "10.192.1.64/28"
+        },
+        "subnet1StartAddress": {
+            "value": "10.192.1.68"
+        },
+        "subnet2Name": {
+            "value": "snet_10.192.1.80-28_CGBackend"
+        },
+        "subnet2Prefix": {
+            "value": "10.192.1.80/28"
+        },
+        "subnet2StartAddress": {
+            "value": "10.192.1.84"
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "rg_sbx_HubVNet"
+        },
+        "bootstrapScript": {
+            "value": ""
+        },
+        "allowDownloadFromUploadToCheckPoint": {
+            "value": "true"
+        },
+        "additionalDiskSizeGB": {
+            "value": 0
+        },
+        "diskType": {
+            "value": "Standard_LRS"
+        },
+        "managedSystemAssigned": {
+            "value": "yes"
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        },
+        "availabilityOptions": {
+            "value": "Availability Zones"
+        }
+    }
+}
